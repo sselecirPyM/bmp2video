@@ -22,6 +22,7 @@ class MyHandler(FileSystemEventHandler):
                 '-y',
                 '-loglevel','quiet',
                 '-r', str(self.frame_rate),
+                "-colorspace","bt709",
                 '-i', 'pipe:0',
                 '-preset', 'fast',
                 '-crf', '21',
